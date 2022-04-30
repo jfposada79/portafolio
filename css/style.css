@@ -172,3 +172,25 @@ section .contact {
     cursor: pointer; }
     section .contact .linkedin:hover, section .contact .git:hover, section .contact .email:hover, section .contact .wp:hover {
       background-color: #ff0022; }
+
+.footer-line {
+  width: 90%;
+  height: 2px;
+  background-color: #282830;
+  margin: 50px auto 0 auto; }
+
+footer {
+  display: flex;
+  color: #777; }
+  footer .footer-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    footer .footer-area .powered {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    footer .footer-area img {
+      width: 25px;
+      height: 25px;
+      margin: 10px; }
