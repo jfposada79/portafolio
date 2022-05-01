@@ -227,6 +227,93 @@ section {
 }
 
 }
+
+// Section proyects
+
+.container-proyects {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+
+.card-proyect {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 15px;
+    width: 300px;
+    height: 410px;
+    border-radius: 9px;
+    border: 1px solid $color-titles;
+    background-color: #1e1818c7;
+    color: $color-text;
+    text-decoration: none;
+}
+.card-proyect img {
+        background-size: cover;
+        background-repeat: no-repeat;
+        max-width: 100%;
+        min-height: 50%;
+        object-fit: cover;
+        border-radius: 6px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+.proyect-info {
+    padding: 10px 5px 0 3px;
+
+    h4 {
+        font-size: 22px;
+        font-weight: 700;
+        color: $color-titles;
+    }
+
+    p {
+        margin-top: 20px;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .btns-proyect {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        margin: 20px 0;
+
+        a {
+            padding: 10px 20px;
+            margin-top: 10px;
+            outline: none;
+            font-size: 18px;
+            font-weight: 500;
+            border-radius: 8px;
+            text-decoration: none;
+            
+        }
+
+        a:hover {
+            background-color: $color-titles;
+        }
+
+        .view-live {
+            background-color: transparent;
+            border: 1px solid $color-titles;
+            color: $color-text;
+        }
+
+        .github-repo {
+            background-color: transparent;
+            border: 1px solid $color-titles;
+            color: $color-text
+        }
+    }
+
+}
+
+
+
+
+
 section {
 .contact {
     display: flex;
@@ -251,6 +338,8 @@ section {
     }
 }
 }
+
+
 
 .footer-line {
     width: 90%;
