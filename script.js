@@ -1,6 +1,6 @@
-var messageArray = ['Desenvolvedor front-end.'];
+var messageArray = ['FullStack Developer.'];
 var textPosition = 0;
-var speed = 70;
+var speed = 60;
 
 typewriter = () => {
     document.querySelector('#message').innerHTML = 

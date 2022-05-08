@@ -15,9 +15,16 @@ body {
   max-width: 1200px;
   margin: auto;
   padding: 50px 30px; }
+  @media (max-width: 400px) {
+    .container {
+      padding: 50px 15px; } }
+  @media (max-width: 340px) {
+    .container {
+      padding: 50px 0; } }
 
 header .logo {
-  padding: 40px; }
+  padding: 40px;
+  visibility: hidden; }
 
 main video {
   position: absolute;
@@ -40,16 +47,34 @@ main .overlay {
   display: flex;
   flex-direction: column;
   margin-top: 150px; }
+  @media (max-width: 340px) {
+    .main-area {
+      padding-left: 10px; } }
   .main-area span {
     font-size: 36px;
     color: #ffffff;
     letter-spacing: 5px; }
+    @media (max-width: 600px) {
+      .main-area span {
+        font-size: 28px; } }
+    @media (max-width: 505px) {
+      .main-area span {
+        font-size: 22px; } }
+    @media (max-width: 350px) {
+      .main-area span {
+        font-size: 16px; } }
   .main-area h2 {
     margin: 5px 0;
     font-size: 48px;
     color: #ff0022;
     font-weight: 700;
     letter-spacing: 3px; }
+    @media (max-width: 600px) {
+      .main-area h2 {
+        font-size: 40px; } }
+    @media (max-width: 350px) {
+      .main-area h2 {
+        font-size: 36px; } }
   .main-area button {
     width: 300px;
     height: 60px;
@@ -61,6 +86,9 @@ main .overlay {
     margin-top: 40px;
     cursor: pointer;
     transition: .5s; }
+    @media (max-width: 350px) {
+      .main-area button {
+        width: 280px; } }
     .main-area button:hover {
       background-color: #ff0022; }
   .main-area .arrow img {
@@ -90,10 +118,18 @@ article {
     align-items: center;
     padding: 0 100px;
     box-sizing: border-box; }
+    @media (max-width: 650px) {
+      article .about-area {
+        padding: 20px; } }
     article .about-area .about1 {
       width: 100%;
       display: flex;
       align-items: center; }
+      @media (max-width: 680px) {
+        article .about-area .about1 {
+          margin-bottom: 10px; }
+          article .about-area .about1 img {
+            height: 100px; } }
       article .about-area .about1 h3 {
         color: #ffffff;
         margin: 0;
@@ -104,11 +140,20 @@ article {
         article .about-area .about1 h3 span {
           color: #ff0022;
           font-weight: 700; }
+        @media (max-width: 680px) {
+          article .about-area .about1 h3 {
+            font-size: 18px; } }
+        @media (max-width: 350px) {
+          article .about-area .about1 h3 {
+            font-size: 14px; } }
     article .about-area .about2 {
       width: 100%;
       display: flex;
       justify-content: flex-end;
       align-items: center; }
+      @media (max-width: 680px) {
+        article .about-area .about2 img {
+          height: 100px; } }
       article .about-area .about2 span {
         color: #ff0022; }
       article .about-area .about2 h3 {
@@ -122,6 +167,12 @@ article {
         article .about-area .about2 h3 span {
           color: #ff0022;
           font-weight: 700; }
+        @media (max-width: 680px) {
+          article .about-area .about2 h3 {
+            font-size: 18px; } }
+        @media (max-width: 350px) {
+          article .about-area .about2 h3 {
+            font-size: 14px; } }
 
 section {
   display: flex; }
@@ -138,6 +189,9 @@ section {
     section .stack-area .stack1, section .stack-area .stack2 {
       display: flex;
       margin: 0 100px; }
+      @media (max-width: 749px) {
+        section .stack-area .stack1, section .stack-area .stack2 {
+          margin: 10px 0; } }
     section .stack-area .stack1 .stack1-text {
       margin: -18px 0 0 10px; }
     section .stack-area .stack1 .stack-title {
@@ -193,6 +247,10 @@ section {
     margin-top: 20px;
     font-size: 18px;
     font-weight: 500; }
+  .proyect-info .xl {
+    margin-top: 20px;
+    font-size: 16.17px;
+    font-weight: 500; }
   .proyect-info .btns-proyect {
     display: flex;
     width: 100%;
@@ -221,6 +279,9 @@ section .contact {
   display: flex;
   justify-content: center;
   align-items: center; }
+  @media (max-width: 600px) {
+    section .contact {
+      flex-wrap: wrap; } }
   section .contact .linkedin, section .contact .git, section .contact .email, section .contact .wp {
     display: flex;
     margin: 10px;
@@ -256,3 +317,17 @@ footer {
       width: 25px;
       height: 25px;
       margin: 10px; }
+
+.main-area p {
+  margin: 0;
+  display: inline-block;
+  animation: blink 0.6s infinite;
+  color: #ff0022; }
+
+@keyframes blink {
+  0% {
+    opacity: 100%; }
+  50% {
+    opacity: 0%; }
+  100% {
+    opacity: 100%; } }
