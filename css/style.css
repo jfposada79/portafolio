@@ -316,7 +316,8 @@ footer {
     footer .footer-area img {
       width: 25px;
       height: 25px;
-      margin: 10px; }
+      margin: 10px;
+      visibility: hidden; }
 
 .main-area p {
   margin: 0;
